@@ -18,7 +18,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   outline: none;
-  background-color: #f7f7f7;
+  background: url('../img/map(blue).png') center no-repeat fixed;
+  background-size: cover;
+
 }
 
 a {
@@ -169,7 +171,7 @@ header #callUs:hover {
 /**************************************/
 
 #aboutUsBlock {
-  background-color: rgba(219,219,219,.5);
+  background-color: rgb(235, 235, 235);
   min-height: 70vh;
   width: 100%;
 }
@@ -623,19 +625,77 @@ header #callUs:hover {
 }
 
 /**************************************/
-/* GALLERY BLOCK */
-/**************************************/
-
-#galleryBlock {
-  
-}
-
-/**************************************/
 /* CLIENT BLOCK */
 /**************************************/
 
 #clientBlock {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, .75);
+}
 
+#clientBlock #clientsBlock {
+  width: 70%;
+  height: 50vh;
+  margin-left: 15%;
+}
+
+#clientBlock #clientsBlock #clientTitle {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#clientBlock #clientsBlock #clientSayBlock {
+
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay {
+  float: left;
+  width: 45%;
+  margin-left: 5%;
+  color: #022a4f;
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .bracket {
+  font-family: "Times new romans";
+  font-size: 3em;
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .say {
+  font-size: 0.95em;
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .client {
+  margin: 2%;
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .client .clientPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2%;
+  float: left;
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .client .clientName {
+  padding: 5%;
+  margin-left: 1%;
+  display: inline-block;
+  color: rgb(29, 51, 77);
+}
+
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .client .clientName .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#clientBlock #clientsBlock #clientSayBlock .clientSay .client .clientName .profession {
+  font-size: 0.95em;
+  text-transform: lowercase;
 }
 
 /**************************************/
@@ -643,7 +703,60 @@ header #callUs:hover {
 /**************************************/
 
 #contactUsBlock {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, .75);
+}
 
+#contactUsBlock #contactBlock {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 4.9%;
+  background-color: rgba(189, 210, 239, 0.82);
+  border-radius: 5px;
+}
+
+#contactUsBlock #contactBlock #contactHead {
+  text-align: center;
+  padding: 3%;
+}
+
+#contactUsBlock #contactBlock #contactHead #contactTitle {
+  padding: 2%;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(101, 170, 252);
+}
+
+#contactUsBlock #contactBlock #contactHead #contactText {
+  padding: 2%;
+  font-size: 0.85em;
+  color: #434d56;
+}
+
+#contactUsBlock #contactBlock #contactForm {
+  display: inline-block;
+  width: 80%;
+  margin-left: 7%;
+}
+
+#contactUsBlock #contactBlock #contactForm #contactName,
+#contactUsBlock #contactBlock #contactForm #contactPhone,
+#contactUsBlock #contactBlock #contactForm #contactEmail {
+  width: 100%;
+  margin-top: 10px;;
+  padding: 5%;
+}
+
+#contactUsBlock #contactBlock #contactForm #contactButton {
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 5%;
+  margin-left: 5%;
+  outline: none;
+  font-size: 1.1em;
 }
 
 /**************************************/
@@ -689,4 +802,19 @@ header #callUs:hover {
 .btn:hover {
   border: 2px solid rgb(155, 194, 240);
   background-color: rgb(155, 194, 240);
+}
+
+.formField {
+  display: inline-block;
+  border: none;
+  padding: 2%;
+  border-radius: 5px;
+  float: left;
+  outline: none;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 1em;
+  color: #69879f;
 }
